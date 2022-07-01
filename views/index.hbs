@@ -1,1 +1,91 @@
-<h1>hello world</h1>
+<div class="sidebar">
+  <img class="setting-btn" src="/img/icon/setting.svg" alt="">
+
+    <ul class="category-list scrollbar">
+      <li><a href="#">漢堡</a></li>
+      <li><a href="#">吐司</a></li>
+      <li><a href="#">鐵板麵</a></li>
+      <li><a href="#">飲料</a></li>
+    </ul>
+
+    <div class="final-order">
+      <h4>訂單</h4>
+      <h5>雞腿蛋餅 x 2</h5>
+      <button>結帳/修改</button>
+    </div>
+
+</div>
+
+<div class="menu">
+  <div class="category">
+
+    <h2>漢堡</h2>
+    <div class="wrapper">
+      <div class="wrap-item">
+        <div class="card">
+          <div class="product-name">紐澳良烤雞堡</div>
+          <div class="property">
+            <img class="property-img" src="/img/icon/fried.svg" alt="">
+            <img class="property-img" src="/img/icon/spicy.svg" alt="">
+            <img class="property-img" src="/img/icon/vegan.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<div class="order-window">
+  <div class="order-panel">
+    <div class="order-product-title">
+      <h1 class="order-product-name">紐澳良烤雞堡</h1>
+      <h1 class="order-product-price">85$</h1>
+    </div>
+    
+    <div class="flex-container">
+      <div class="num-board">
+        <div class="amount" style="grid-area:amount;">0</div>
+        <button class="num-btn" style="grid-area:one;">1</button>
+        <button class="num-btn" style="grid-area:two;">2</button>
+        <button class="num-btn" style="grid-area:three;">3</button>
+        <button class="num-btn" style="grid-area:four;">4</button>
+        <button class="num-btn" style="grid-area:five;">5</button>
+        <button class="num-btn" style="grid-area:six;">6</button>
+        <button class="num-btn" style="grid-area:seven;">7</button>
+        <button class="num-btn" style="grid-area:eight;">8</button>
+        <button class="num-btn" style="grid-area:nine;">9</button>
+        <button class="num-btn" style="grid-area:zero;">0</button>
+        <button class="back-btn" style="grid-area:back;">
+          <img class="backspace" src="/img/icon/backspace.svg" alt="">
+        </button>
+      </div>
+      <div class="product-info">
+        <div class="scrollbar">
+          <h3>食材</h3>
+          <p>烤雞、美乃滋、漢堡麵包、番茄</p>
+        </div>
+        <div class="scrollbar">
+          <h3>客製</h3>
+          <div>
+            <input class="custom" type="checkbox" name="" id="加蛋">
+            <label for="加蛋">加蛋 <span>10</span>$</label>
+          </div>
+          <div>
+            <input class="custom" type="checkbox" name="" id="加起士">
+            <label for="加起士">加起士 <span>10</span>$</label>
+          </div>
+          <div>
+            <label for="note">備註</label>
+            <input type="text" id="note">
+          </div>
+        </div>
+        <div class="order-btn">
+          <button><span class="order-total">0</span>$ 下單</button>
+        </div>
+      </div>
+    </div>
+    
+   
+  </div>
+</div>
