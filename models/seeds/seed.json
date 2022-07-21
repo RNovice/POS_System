@@ -1,0 +1,475 @@
+{
+  "results": [
+    {
+      "category" : "漢堡",
+      "name" : "紐澳良烤雞堡",
+      "price" : 85,
+      "cost" : 20,
+      "material" : ["雞胸肉排","漢堡麵包","美乃滋","番茄"],
+      "property" : ["/img/icon/vegan.svg","/img/icon/spicy.svg","/img/icon/fried.svg"],
+      "custom" : [
+        "<input class='custom' type='checkbox' id='加蛋'><label for='加蛋'>加蛋 <span>10</span>$</label>",
+        "<input class='custom' type='checkbox' id='加起士'><label for='加起士'>加起士 <span>10</span>$</label>",
+        "<input class='custom' type='checkbox' id='不要番茄'><label for='不要番茄'>不要番茄 <span>0</span>$</label>",
+        "<input class='custom' type='checkbox' id='不要醬'><label for='不要醬'>不要醬 <span>0</span>$</label>"]
+    },
+    {
+      "category" : "漢堡",
+      "name" : "卡啦雞腿堡",
+      "price" : 105,
+      "cost" : 35,
+      "material" : ["卡啦雞腿","漢堡麵包","美乃滋","生菜","番茄醬"],
+      "property" : ["/img/icon/spicy.svg","/img/icon/fried.svg"],
+      "custom" : [
+        "<input class='custom' type='checkbox' id='加蛋'><label for='加蛋'>加蛋 <span>10</span>$</label>",
+        "<input class='custom' type='checkbox' id='加起士'><label for='加起士'>加起士 <span>10</span>$</label>",
+        "<input class='custom' type='checkbox' id='不要菜'><label for='不要菜'>不要菜 <span>0</span>$</label>",
+        "<input class='custom' type='checkbox' id='不要醬'><label for='不要醬'>不要醬 <span>0</span>$</label>"]
+    },
+    {
+      "category" : "漢堡",
+      "name" : "雙層牛肉堡",
+      "price" : 130,
+      "cost" : 60,
+      "material" : ["牛絞肉片","漢堡麵包","美乃滋","洋蔥","芥末醬"],
+      "property" : [],
+      "custom" : [
+        "<input class='custom' type='checkbox' id='加蛋'><label for='加蛋'>加蛋 <span>10</span>$</label>",
+        "<input class='custom' type='checkbox' id='加起士'><label for='加起士'>加起士 <span>10</span>$</label>",
+        "<input class='custom' type='checkbox' id='不要洋蔥'><label for='不要洋蔥'>不要洋蔥 <span>0</span>$</label>",
+        "<input class='custom' type='checkbox' id='不要醬'><label for='不要醬'>不要醬 <span>0</span>$</label>"]
+    },
+    {
+      "category" : "漢堡",
+      "name" : "牛肉培根堡",
+      "price" : 135,
+      "cost" : 65,
+      "material" : ["牛絞肉片","培根","漢堡麵包","酸黃瓜","番茄醬","芥末醬"],
+      "property" : [],
+      "custom" : [
+        "<input class='custom' type='checkbox' id='加蛋'><label for='加蛋'>加蛋 <span>10</span>$</label>",
+        "<input class='custom' type='checkbox' id='加起士'><label for='加起士'>加起士 <span>10</span>$</label>",
+        "<input class='custom' type='checkbox' id='不要酸黃瓜'><label for='不要酸黃瓜'>不要酸黃瓜 <span>0</span>$</label>",
+        "<input class='custom' type='checkbox' id='不要醬'><label for='不要醬'>不要醬 <span>0</span>$</label>"]
+    },
+    {
+      "category" : "漢堡",
+      "name" : "壽喜燒牛堡",
+      "price" : 125,
+      "cost" : 50,
+      "material" : ["火鍋牛肉片","漢堡麵包","洋蔥","壽喜燒醬"],
+      "property" : [],
+      "custom" : [
+        "<input class='custom' type='checkbox' id='加蛋'><label for='加蛋'>加蛋 <span>10</span>$</label>",
+        "<input class='custom' type='checkbox' id='加起士'><label for='加起士'>加起士 <span>10</span>$</label>",
+        "<input class='custom' type='checkbox' id='不要洋蔥'><label for='不要洋蔥'>不要洋蔥 <span>0</span>$</label>",
+        "<input class='custom' type='checkbox' id='不要醬'><label for='不要醬'>不要醬 <span>0</span>$</label>"]
+    },
+    {
+      "category" : "漢堡",
+      "name" : "黑胡椒牛肉堡",
+      "price" : 100,
+      "cost" : 45,
+      "material" : ["牛腩肉丁","漢堡麵包","洋蔥","黑胡椒醬"],
+      "property" : ["/img/icon/spicy.svg"],
+      "custom" : [
+        "<input class='custom' type='checkbox' id='加蛋'><label for='加蛋'>加蛋 <span>10</span>$</label>",
+        "<input class='custom' type='checkbox' id='加起士'><label for='加起士'>加起士 <span>10</span>$</label>",
+        "<input class='custom' type='checkbox' id='不要洋蔥'><label for='不要洋蔥'>不要洋蔥 <span>0</span>$</label>",
+        "<input class='custom' type='checkbox' id='不要醬'><label for='不要醬'>不要醬 <span>0</span>$</label>"]
+    },
+    {
+      "category" : "漢堡",
+      "name" : "香草豬肉堡",
+      "price" : 90,
+      "cost" : 30,
+      "material" : ["豬絞肉片","漢堡麵包","生菜","綜合香料","美乃滋"],
+      "property" : [],
+      "custom" : [
+        "<input class='custom' type='checkbox' id='加蛋'><label for='加蛋'>加蛋 <span>10</span>$</label>",
+        "<input class='custom' type='checkbox' id='加起士'><label for='加起士'>加起士 <span>10</span>$</label>",
+        "<input class='custom' type='checkbox' id='不要菜'><label for='不要菜'>不要菜 <span>0</span>$</label>",
+        "<input class='custom' type='checkbox' id='不要醬'><label for='不要醬'>不要醬 <span>0</span>$</label>"]
+    },
+    {
+      "category" : "漢堡",
+      "name" : "日式豬排堡",
+      "price" : 110,
+      "cost" : 40,
+      "material" : ["炸豬肉排","漢堡麵包","高麗菜絲","豬排醬","美乃滋"],
+      "property" : ["/img/icon/fried.svg"],
+      "custom" : [
+        "<input class='custom' type='checkbox' id='加蛋'><label for='加蛋'>加蛋 <span>10</span>$</label>",
+        "<input class='custom' type='checkbox' id='加起士'><label for='加起士'>加起士 <span>10</span>$</label>",
+        "<input class='custom' type='checkbox' id='不要菜'><label for='不要菜'>不要菜 <span>0</span>$</label>",
+        "<input class='custom' type='checkbox' id='不要醬'><label for='不要醬'>不要醬 <span>0</span>$</label>"]
+    },
+    {
+      "category" : "漢堡",
+      "name" : "薑汁燒肉堡",
+      "price" : 75,
+      "cost" : 25,
+      "material" : ["火鍋豬肉片","漢堡麵包","洋蔥","調味薑粉","薑汁調味醬"],
+      "property" : ["/img/icon/spicy.svg"],
+      "custom" : [
+        "<input class='custom' type='checkbox' id='加蛋'><label for='加蛋'>加蛋 <span>10</span>$</label>",
+        "<input class='custom' type='checkbox' id='加起士'><label for='加起士'>加起士 <span>10</span>$</label>",
+        "<input class='custom' type='checkbox' id='不要洋蔥'><label for='不要洋蔥'>不要洋蔥 <span>0</span>$</label>",
+        "<input class='custom' type='checkbox' id='不要醬'><label for='不要醬'>不要醬 <span>0</span>$</label>"]
+    },
+    {
+      "category" : "漢堡",
+      "name" : "照燒豬排堡",
+      "price" : 70,
+      "cost" : 20,
+      "material" : ["豬里肌肉排","漢堡麵包","照燒醬"],
+      "property" : [],
+      "custom" : [
+        "<input class='custom' type='checkbox' id='加蛋'><label for='加蛋'>加蛋 <span>10</span>$</label>",
+        "<input class='custom' type='checkbox' id='加起士'><label for='加起士'>加起士 <span>10</span>$</label>",
+        "<input class='custom' type='checkbox' id='不要醬'><label for='不要醬'>不要醬 <span>0</span>$</label>"]
+    },
+    {
+      "category" : "漢堡",
+      "name" : "火腿起士堡",
+      "price" : 80,
+      "cost" : 30,
+      "material" : ["火腿片","漢堡麵包","起士片","芥末醬"],
+      "property" : [],
+      "custom" : [
+        "<input class='custom' type='checkbox' id='加蛋'><label for='加蛋'>加蛋 <span>10</span>$</label>",
+        "<input class='custom' type='checkbox' id='不要醬'><label for='不要醬'>不要醬 <span>0</span>$</label>"]
+    },
+    {
+      "category" : "漢堡",
+      "name" : "和風鮪魚堡",
+      "price" : 75,
+      "cost" : 30,
+      "material" : ["鮪魚","漢堡麵包","洋蔥","生菜","美乃滋"],
+      "property" : [],
+      "custom" : [
+        "<input class='custom' type='checkbox' id='加蛋'><label for='加蛋'>加蛋 <span>10</span>$</label>",
+        "<input class='custom' type='checkbox' id='加起士'><label for='加起士'>加起士 <span>10</span>$</label>",
+        "<input class='custom' type='checkbox' id='不要洋蔥'><label for='不要洋蔥'>不要洋蔥 <span>0</span>$</label>",
+        "<input class='custom' type='checkbox' id='不要菜'><label for='不要菜'>不要菜 <span>0</span>$</label>",
+        "<input class='custom' type='checkbox' id='不要醬'><label for='不要醬'>不要醬 <span>0</span>$</label>"]
+    },
+    {
+      "category" : "漢堡",
+      "name" : "香酥魚排堡",
+      "price" : 80,
+      "cost" : 30,
+      "material" : ["炸魚排","漢堡麵包","美乃滋"],
+      "property" : ["/img/icon/fried.svg"],
+      "custom" : [
+        "<input class='custom' type='checkbox' id='加蛋'><label for='加蛋'>加蛋 <span>10</span>$</label>",
+        "<input class='custom' type='checkbox' id='加起士'><label for='加起士'>加起士 <span>10</span>$</label>",
+        "<input class='custom' type='checkbox' id='不要醬'><label for='不要醬'>不要醬 <span>0</span>$</label>"]
+    },
+    {
+      "category" : "漢堡",
+      "name" : "時蔬堡",
+      "price" : 70,
+      "cost" : 25,
+      "material" : ["漢堡麵包","生菜","番茄","黃瓜片","美乃滋"],
+      "property" : ["/img/icon/vegan.svg"],
+      "custom" : [
+        "<input class='custom' type='checkbox' id='加蛋'><label for='加蛋'>加蛋 <span>10</span>$</label>",
+        "<input class='custom' type='checkbox' id='加起士'><label for='加起士'>加起士 <span>10</span>$</label>",
+        "<input class='custom' type='checkbox' id='不要醬'><label for='不要醬'>不要醬 <span>0</span>$</label>"]
+    },
+    {
+      "category" : "漢堡",
+      "name" : "馬鈴薯沙拉堡",
+      "price" : 65,
+      "cost" : 20,
+      "material" : ["漢堡麵包","生菜","馬鈴薯泥","黃瓜片","美乃滋"],
+      "property" : ["/img/icon/vegan.svg"],
+      "custom" : [
+        "<input class='custom' type='checkbox' id='加蛋'><label for='加蛋'>加蛋 <span>10</span>$</label>",
+        "<input class='custom' type='checkbox' id='加起士'><label for='加起士'>加起士 <span>10</span>$</label>",
+        "<input class='custom' type='checkbox' id='不要醬'><label for='不要醬'>不要醬 <span>0</span>$</label>"]
+    },
+    {
+      "category" : "捲餅",
+      "name" : "雞肉捲餅",
+      "price" : 80,
+      "cost" : 30,
+      "material" : ["雞胸肉排","玉米餅皮","生菜","洋蔥","塔塔醬"],
+      "property" : ["/img/icon/spicy.svg"],
+      "custom" : [
+        "<input class='custom' type='checkbox' id='不要醬'><label for='不要醬'>不要醬 <span>0</span>$</label>",
+        "<input class='custom' type='checkbox' id='不要菜'><label for='不要菜'>不要菜 <span>0</span>$</label>",
+        "<input class='custom' type='checkbox' id='不要辣'><label for='不要辣'>不要辣 <span>0</span>$</label>"]
+    },
+    {
+      "category" : "捲餅",
+      "name" : "牛肉捲餅",
+      "price" : 85,
+      "cost" : 35,
+      "material" : ["牛腩肉丁","玉米餅皮","生菜","洋蔥","塔塔醬"],
+      "property" : ["/img/icon/spicy.svg"],
+      "custom" : [
+        "<input class='custom' type='checkbox' id='不要醬'><label for='不要醬'>不要醬 <span>0</span>$</label>",
+        "<input class='custom' type='checkbox' id='不要菜'><label for='不要菜'>不要菜 <span>0</span>$</label>",
+        "<input class='custom' type='checkbox' id='不要辣'><label for='不要辣'>不要辣 <span>0</span>$</label>"]
+    },
+    {
+      "category" : "捲餅",
+      "name" : "豬肉捲餅",
+      "price" : 80,
+      "cost" : 30,
+      "material" : ["豬柳","玉米餅皮","生菜","洋蔥","塔塔醬"],
+      "property" : ["/img/icon/spicy.svg"],
+      "custom" : [
+        "<input class='custom' type='checkbox' id='不要醬'><label for='不要醬'>不要醬 <span>0</span>$</label>",
+        "<input class='custom' type='checkbox' id='不要菜'><label for='不要菜'>不要菜 <span>0</span>$</label>",
+        "<input class='custom' type='checkbox' id='不要辣'><label for='不要辣'>不要辣 <span>0</span>$</label>"]
+    },
+    {
+      "category" : "捲餅",
+      "name" : "鷹嘴豆泥捲餅",
+      "price" : 65,
+      "cost" : 20,
+      "material" : ["鷹嘴豆泥","玉米餅皮","生菜","素塔塔醬"],
+      "property" : ["/img/icon/spicy.svg","/img/icon/vegan.svg"],
+      "custom" : [
+        "<input class='custom' type='checkbox' id='不要醬'><label for='不要醬'>不要醬 <span>0</span>$</label>",
+        "<input class='custom' type='checkbox' id='不要菜'><label for='不要菜'>不要菜 <span>0</span>$</label>",
+        "<input class='custom' type='checkbox' id='不要辣'><label for='不要辣'>不要辣 <span>0</span>$</label>"]
+    },
+    {
+      "category" : "義大利麵",
+      "name" : "白醬野菇麵",
+      "price" : 80,
+      "cost" : 25,
+      "material" : ["奶油白醬","義大利麵","巴西蘑菇"],
+      "property" : [],
+      "custom" : []
+    },
+    {
+      "category" : "義大利麵",
+      "name" : "青醬松子麵",
+      "price" : 80,
+      "cost" : 25,
+      "material" : ["羅勒青醬","義大利麵","松子"],
+      "property" : ["/img/icon/vegan.svg"],
+      "custom" : []
+    },
+    {
+      "category" : "義大利麵",
+      "name" : "茄醬培根麵",
+      "price" : 80,
+      "cost" : 25,
+      "material" : ["番茄紅醬","義大利麵","培根"],
+      "property" : [],
+      "custom" : []
+    },
+    {
+      "category" : "義大利麵",
+      "name" : "香蒜墨魚麵",
+      "price" : 80,
+      "cost" : 25,
+      "material" : ["調味墨魚醬","義大利麵","蒜末"],
+      "property" : [],
+      "custom" : []
+    },
+    {
+      "category" : "義大利麵",
+      "name" : "水牛起士辣椒麵",
+      "price" : 80,
+      "cost" : 25,
+      "material" : ["調味橄欖油","義大利麵","水牛起士","乾辣椒"],
+      "property" : ["/img/icon/spicy.svg"],
+      "custom" : []
+    },
+    {
+      "category" : "副餐",
+      "name" : "薯條",
+      "price" : 45,
+      "cost" : 15,
+      "material" : ["薯條"],
+      "property" : ["/img/icon/fried.svg"],
+      "custom" : []
+    },
+    {
+      "category" : "副餐",
+      "name" : "雞塊",
+      "price" : 55,
+      "cost" : 25,
+      "material" : ["雞塊"],
+      "property" : ["/img/icon/fried.svg"],
+      "custom" : []
+    },
+    {
+      "category" : "副餐",
+      "name" : "洋蔥圈",
+      "price" : 35,
+      "cost" : 10,
+      "material" : ["洋蔥圈"],
+      "property" : ["/img/icon/fried.svg"],
+      "custom" : []
+    },
+    {
+      "category" : "副餐",
+      "name" : "薯餅",
+      "price" : 35,
+      "cost" : 10,
+      "material" : ["薯餅"],
+      "property" : ["/img/icon/fried.svg"],
+      "custom" : []
+    },
+    {
+      "category" : "副餐",
+      "name" : "炸肉餅",
+      "price" : 65,
+      "cost" : 20,
+      "material" : ["炸肉餅"],
+      "property" : ["/img/icon/fried.svg"],
+      "custom" : []
+    },
+    {
+      "category" : "副餐",
+      "name" : "啤酒香腸",
+      "price" : 65,
+      "cost" : 20,
+      "material" : ["啤酒香腸"],
+      "property" : [],
+      "custom" : []
+    },
+    {
+      "category" : "副餐",
+      "name" : "歐姆蛋",
+      "price" : 50,
+      "cost" : 15,
+      "material" : ["雞蛋","鮮奶油"],
+      "property" : [],
+      "custom" : []
+    },
+    {
+      "category" : "副餐",
+      "name" : "沙拉",
+      "price" : 45,
+      "cost" : 15,
+      "material" : ["玉米粒","番茄","生菜","葡萄乾"],
+      "property" : ["/img/icon/vegan.svg"],
+      "custom" : []
+    },
+    {
+      "category" : "飲品",
+      "name" : "紅茶",
+      "price" : 30,
+      "cost" : 5,
+      "material" : ["紅茶"],
+      "property" : ["/img/icon/hot.svg","/img/icon/cold.svg"],
+      "custom" : [
+        "<input class='custom' type='checkbox' id='加大'><label for='加大'>加大 <span>10</span>$</label>",
+        "<input class='custom' type='checkbox' id='去冰'><label for='去冰'>去冰 <span>0</span>$</label>",
+        "<input class='custom' type='checkbox' id='無糖'><label for='無糖'>無糖 <span>0</span>$</label>"]
+    },
+    {
+      "category" : "飲品",
+      "name" : "綠茶",
+      "price" : 30,
+      "cost" : 5,
+      "material" : ["綠茶"],
+      "property" : ["/img/icon/hot.svg","/img/icon/cold.svg"],
+      "custom" : [
+        "<input class='custom' type='checkbox' id='加大'><label for='加大'>加大 <span>10</span>$</label>",
+        "<input class='custom' type='checkbox' id='去冰'><label for='去冰'>去冰 <span>0</span>$</label>",
+        "<input class='custom' type='checkbox' id='無糖'><label for='無糖'>無糖 <span>0</span>$</label>"]
+    },
+    {
+      "category" : "飲品",
+      "name" : "奶茶",
+      "price" : 40,
+      "cost" : 10,
+      "material" : ["奶茶"],
+      "property" : ["/img/icon/hot.svg","/img/icon/cold.svg"],
+      "custom" : [
+        "<input class='custom' type='checkbox' id='加大'><label for='加大'>加大 <span>10</span>$</label>",
+        "<input class='custom' type='checkbox' id='去冰'><label for='去冰'>去冰 <span>0</span>$</label>",
+        "<input class='custom' type='checkbox' id='無糖'><label for='無糖'>無糖 <span>0</span>$</label>"]
+    },
+    {
+      "category" : "飲品",
+      "name" : "花茶",
+      "price" : 40,
+      "cost" : 10,
+      "material" : ["花茶"],
+      "property" : ["/img/icon/hot.svg"],
+      "custom" : [
+        "<input class='custom' type='checkbox' id='加大'><label for='加大'>加大 <span>10</span>$</label>",
+        "<input class='custom' type='checkbox' id='無糖'><label for='無糖'>無糖 <span>0</span>$</label>"]
+    },
+    {
+      "category" : "飲品",
+      "name" : "可樂",
+      "price" : 45,
+      "cost" : 5,
+      "material" : ["可樂"],
+      "property" : ["/img/icon/cold.svg"],
+      "custom" : [
+        "<input class='custom' type='checkbox' id='加大'><label for='加大'>加大 <span>10</span>$</label>",
+        "<input class='custom' type='checkbox' id='去冰'><label for='去冰'>去冰 <span>0</span>$</label>"]
+    },
+    {
+      "category" : "飲品",
+      "name" : "蘋果汁",
+      "price" : 40,
+      "cost" : 5,
+      "material" : ["蘋果汁"],
+      "property" : ["/img/icon/cold.svg"],
+      "custom" : [
+        "<input class='custom' type='checkbox' id='加大'><label for='加大'>加大 <span>10</span>$</label>",
+        "<input class='custom' type='checkbox' id='去冰'><label for='去冰'>去冰 <span>0</span>$</label>"]
+    },
+    {
+      "category" : "飲品",
+      "name" : "冰沙",
+      "price" : 55,
+      "cost" : 10,
+      "material" : ["蘋果汁"],
+      "property" : ["/img/icon/cold.svg"],
+      "custom" : [
+        "<input class='custom' type='checkbox' id='加大'><label for='加大'>加大 <span>10</span>$</label>",
+        "<input class='custom' type='checkbox' id='去冰'><label for='去冰'>去冰 <span>0</span>$</label>"]
+    },
+    {
+      "category" : "飲品",
+      "name" : "玉米湯",
+      "price" : 60,
+      "cost" : 15,
+      "material" : ["玉米湯底","玉米粒"],
+      "property" : ["/img/icon/hot.svg"],
+      "custom" : []
+    },
+    {
+      "category" : "飲品",
+      "name" : "蘑菇湯",
+      "price" : 65,
+      "cost" : 20,
+      "material" : ["蘑菇湯底","巴西蘑菇"],
+      "property" : ["/img/icon/hot.svg"],
+      "custom" : []
+    },
+    {
+      "category" : "飲品",
+      "name" : "洋蔥湯",
+      "price" : 70,
+      "cost" : 20,
+      "material" : ["洋蔥湯底","洋蔥"],
+      "property" : ["/img/icon/hot.svg"],
+      "custom" : []
+    },
+    {
+      "category" : "飲品",
+      "name" : "羅宋湯",
+      "price" : 70,
+      "cost" : 20,
+      "material" : ["羅宋湯底","番茄"],
+      "property" : ["/img/icon/hot.svg"],
+      "custom" : []
+    }
+  ]
+}

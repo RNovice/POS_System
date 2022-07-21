@@ -1,3 +1,4 @@
+<div class="sidebase"></div>
 <div class="sidebar">
   <img class="setting-btn" src="/img/icon/setting.svg" alt="">
 
@@ -18,21 +19,23 @@
 
 <div class="menu">
   <div class="category">
-
-    <h2>漢堡</h2>
-    <div class="wrapper">
-      <div class="wrap-item">
-        <div class="card">
-          <div class="product-name">紐澳良烤雞堡</div>
-          <div class="property">
-            <img class="property-img" src="/img/icon/fried.svg" alt="">
-            <img class="property-img" src="/img/icon/spicy.svg" alt="">
-            <img class="property-img" src="/img/icon/vegan.svg" alt="">
+    {{#each category}}
+      <h2>{{this}}</h2>
+      <div class="wrapper">
+        {{#each ../product}}
+          {{#filter ../this this}}
+          <div class="wrap-item">
+            <div class="card">
+              <div class="product-name">{{ this.name }}</div>
+              <div class="property">
+                {{#each this.property}}<img class="property-img" src="{{ this }}" alt="">{{/each}}
+              </div>
+            </div>
           </div>
-        </div>
+          {{/filter}}
+        {{/each}}
       </div>
-    </div>
-    
+    {{/each}}
   </div>
 </div>
 
@@ -61,11 +64,11 @@
         </button>
       </div>
       <div class="product-info">
-        <div class="scrollbar">
+        <div class="scrollbar material">
           <h3>食材</h3>
           <p>烤雞、美乃滋、漢堡麵包、番茄</p>
         </div>
-        <div class="scrollbar">
+        <div class="scrollbar custom-group">
           <h3>客製</h3>
           <div>
             <input class="custom" type="checkbox" name="" id="加蛋">
