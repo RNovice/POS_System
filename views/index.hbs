@@ -1,18 +1,21 @@
 <div class="sidebase"></div>
 <div class="sidebar">
-  <img class="setting-btn" src="/img/icon/setting.svg" alt="">
+  <div class="setting">
+    <img class="setting-btn" src="/img/icon/setting.svg" alt="">
+  </div>
 
     <ul class="category-list scrollbar">
-      <li><a href="#">漢堡</a></li>
-      <li><a href="#">吐司</a></li>
-      <li><a href="#">鐵板麵</a></li>
-      <li><a href="#">飲料</a></li>
+      {{#each category}}
+      <li><a href="#{{this}}">{{this}}</a></li>
+      {{/each}}
     </ul>
 
     <div class="final-order">
-      <h4>訂單</h4>
-      <h5>雞腿蛋餅 x 2</h5>
-      <button>結帳/修改</button>
+      <h4>訂單 <span class="total-price">0</span>$</h4>
+      <h6>last :</h6>
+      <h5 class="last-order"></h5>
+      <button class="check-btn">結帳/修改</button>
+      <button class="clear-btn">清除訂單</button>
     </div>
 
 </div>
@@ -20,7 +23,7 @@
 <div class="menu">
   <div class="category">
     {{#each category}}
-      <h2>{{this}}</h2>
+      <h2 id="{{this}}">{{this}}</h2>
       <div class="wrapper">
         {{#each ../product}}
           {{#filter ../this this}}
@@ -39,11 +42,12 @@
   </div>
 </div>
 
+{{!-- 點餐視窗 order window --}}
 <div class="order-window">
   <div class="order-panel">
     <div class="order-product-title">
-      <h1 class="order-product-name">紐澳良烤雞堡</h1>
-      <h1 class="order-product-price">85$</h1>
+      <h1 class="order-product-name">產品名稱</h1>
+      <h1 class="order-product-price">100$</h1>
     </div>
     
     <div class="flex-container">
@@ -66,7 +70,7 @@
       <div class="product-info">
         <div class="scrollbar material">
           <h3>食材</h3>
-          <p>烤雞、美乃滋、漢堡麵包、番茄</p>
+          <p>食材1、食材2、食材3、食材4</p>
         </div>
         <div class="scrollbar custom-group">
           <h3>客製</h3>
@@ -84,11 +88,31 @@
           </div>
         </div>
         <div class="order-btn">
-          <button><span class="order-total">0</span>$ 下單</button>
+          <button class="order-it"><span class="order-total">0</span>$ 下單</button>
         </div>
       </div>
     </div>
     
-   
+  </div>
+</div>
+
+{{!-- 結帳視窗 check window --}}
+<div class="check-window">
+  <div class="check-panel">
+    <div class="table-wrapper scrollbar">
+      <table>
+        <thead>
+            <th>產品名稱</th>
+            <th>數量</th>
+            <th>價錢</th>
+            <th>移除</th>
+        </thead>
+        <tbody class="order-list">
+          
+        </tbody>
+      </table>
+    </div>
+
+    <button class="bill"><span class="bill-price">0</span>$ 結帳</button>
   </div>
 </div>
