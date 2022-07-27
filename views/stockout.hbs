@@ -1,0 +1,25 @@
+<a class="go-back" href="/">&lt;back</a>
+<div class="stock-grid">
+  {{#each material}}
+  <div class="stock-item">
+    <input class="stock-checkbox" type="checkbox" id="{{this}}" name="stockout" value="{{this}}">
+    <label class="stock-label" for="{{this}}">{{this}}</label>
+  </div>
+  {{/each}}
+
+  <button class="show-stockout">確認</button>
+</div>
+
+<div class="stock-submit-window">
+  <div class="stock-submit-panel">
+    <h3>缺貨品項</h3>
+    <div class="stockout-list scrollbar">
+    </div>
+    <a class="stockout-btn" href="/" >確認送出</a>
+  </div>
+</div>
+
+
+
+
+<script src="/javascript/stock.js"></script>

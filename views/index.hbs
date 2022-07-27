@@ -28,7 +28,7 @@
         {{#each ../product}}
           {{#filter ../this this}}
           <div class="wrap-item">
-            <div class="card">
+            <div class="card {{this.stock}}" id="{{this.name}}">
               <div class="product-name">{{ this.name }}</div>
               <div class="property">
                 {{#each this.property}}<img class="property-img" src="{{ this }}" alt="">{{/each}}
@@ -116,3 +116,6 @@
     <button class="bill"><span class="bill-price">0</span>$ 結帳</button>
   </div>
 </div>
+
+{{!-- js --}}
+<script src="javascript/client.js"></script>

@@ -13,11 +13,35 @@ router.get('/', (req, res) => {
     .catch(err => console.error(err))
 })
 
+router.get('/stock', (req, res) => {
+  
+  res.render('stockout', { material : data.material })
+})
+
 router.post('/order', (req, res) => {
 
   Product.findOne({ name: req.body.name })
     .lean()
     .then(data => res.json(data))
+    .catch(err => console.error(err))
+})
+
+router.post('/homePageStockout', (req, res) => {
+
+  Product.find()
+    .lean()
+    .then(products => {
+      let inStock = []
+      let stockout = req.body.stockout
+
+      if (!Array.isArray(req.body.stockout)) stockout = [req.body.stockout]
+      products.filter(product => {
+        if (product.material.some(material => stockout.includes(material))){
+          inStock.push(product.name)
+        }
+      })
+      res.json(inStock)
+    })
     .catch(err => console.error(err))
 })
 

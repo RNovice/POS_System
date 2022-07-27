@@ -15,11 +15,25 @@ const finalOrder = document.querySelector('.final-order')
 const orderList = document.querySelector('.order-list')
 const billPrice = document.querySelector('.bill-price')
 
+let stockoutList = JSON.parse(localStorage.getItem('stockout'))
 let orderLimit = 100
 let orderInfo = []
 let customPrice = 0
 let customList = []
 
+if (stockoutList.length){
+  fetch('/homePageStockout', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ stockout: stockoutList })
+  })
+  .then((res) => {return res.json()})
+  .then( (data) => {
+    data.forEach(each => {
+      document.getElementById(each).classList.add('stockout-card')
+    })
+  })
+}
 
 function orderTotalCount(custom) {
   orderTotal.innerText = 
@@ -64,7 +78,7 @@ function renderOrderList() {
 menu.addEventListener('click', e => {
   const target = e.target
 
-  if (target.classList.contains('card')){
+  if (target.classList.contains('card') && !target.classList.contains('stockout-card')){
 
     fetch('/order', {
       method: 'POST',
