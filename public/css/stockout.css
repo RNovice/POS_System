@@ -1,0 +1,129 @@
+/* stockout */
+.go-back {
+  position: fixed;
+  left: 15px;
+  top: 20px;
+  letter-spacing: 5px;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.stock-grid {
+  margin: 100px;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(75px, 1fr));
+  grid-gap: 20px;
+}
+
+.stock-item {
+  min-width: 150px;
+  min-height: 75px;
+
+  display: flex;
+  align-items: center;
+}
+
+.stock-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+
+.stock-label {
+  padding: 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.stock-label::before {
+  content: '\25EF';
+  color: #00FF00;
+  text-shadow: 
+  -1px  0px #fff,
+   1px  0px #fff,
+   0px  1px #fff,
+   0px -1px #fff;
+  font-weight:bolder;
+  font-size: 20px;
+
+}
+
+.stock-checkbox:checked + .stock-label::before{
+  content: '\26CC';
+  color: red;
+}
+
+.show-stockout {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+
+  background-color: var(--card-color);
+  color: var(--card-content-color);
+
+  height: 60px;
+  width: 60px;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  border-radius: 50% 50% 15% 50%;
+  border: none;
+
+}
+
+.show-stockout:hover {
+  height: 70px;
+  width: 70px;
+
+  border-radius: 50%;
+
+}
+
+/* stock submit window */
+.stock-submit-window {
+  z-index: 2;
+}
+
+.stock-submit-panel {
+  min-width: 40vw;
+
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.stock-submit-panel::after {
+  font-size: calc(14px + 3vw);
+  top: -12%;
+  right: -10%;
+}
+
+.stock-submit-panel h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.stockout-list {
+  margin-bottom: 10px;
+  max-height: 50vh;
+  overflow: auto;
+}
+
+.stockout-list h5{
+  margin: 0 15%;
+  padding: 8px 0;
+  border-top: 1px solid var(--main-content-color);
+  font-size: 20px;
+}
+
+.stockout-btn {
+  background: transparent;
+  border: 1.6px solid var(--main-content-color);
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 3px;
+}

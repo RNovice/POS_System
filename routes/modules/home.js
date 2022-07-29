@@ -18,6 +18,11 @@ router.get('/stock', (req, res) => {
   res.render('stockout', { material : data.material })
 })
 
+router.get('/color', (req, res) => {
+  
+  res.render('customColor', { material : data.material })
+})
+
 router.post('/order', (req, res) => {
 
   Product.findOne({ name: req.body.name })

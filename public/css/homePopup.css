@@ -1,0 +1,217 @@
+/* order window */
+.order-panel {
+  padding: 13px;
+}
+
+.order-panel::after {
+  font-size: calc(14px + 3vw);
+  top: -3%;
+  right: -8%;
+}
+
+.order-product-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  background: var(--card-color);
+  margin-bottom: 10px;
+  padding: 5px 10px;
+}
+
+.order-product-name {
+  color: var(--card-content-color);
+  letter-spacing: 2vw;
+  font-size: calc(12px + 2vw);
+  font-weight: bolder;
+}
+
+.order-product-price {
+  color: var(--card-content-color);
+  font-size: calc(12px + 2vw);
+  font-weight: bolder;
+}
+
+/* number key board */
+.num-board {
+  width: 23vw;
+  min-width: 160px;
+  aspect-ratio: 3/4;
+  
+  display: grid;
+  grid-template-areas: 
+  "amount amount amount"
+  "one two three"
+  "four five six"
+  "seven eight nine"
+  "zero back back";
+  grid-gap: 10px;
+}
+
+.num-board button {
+  background: var(--card-color);
+  color: var(--card-content-color);
+  border: none;
+  font-size: calc(10px + 2vw);
+  overflow: hidden;
+}
+
+.backspace {
+  height: calc(10px + 2vw);
+  filter: drop-shadow(0px 120px var(--card-content-color));
+  transform: translate(0,-120px);
+  pointer-events: none;
+}
+
+.amount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: calc(15px + 4vw);
+  font-weight: bolder;
+  
+  box-shadow: 
+  rgb(230, 230, 230) 3px 3px 8px 0px inset,
+  rgba(255, 255, 255, 0.5) -3px -3px 12px 2px inset;
+}
+
+/* product info */
+.product-info {
+  padding-left: 13px;
+  width: 23vw;
+  min-width: 160px;
+  aspect-ratio: 3/4;
+
+  display: grid;
+  grid-template-rows: 1.5fr 3fr 2fr;
+  grid-gap: 5px;
+}
+
+.product-info div {
+  font-size: calc(8px + 1vw);
+  overflow: auto;
+}
+
+.product-info div h3{
+  font-weight: bold;
+}
+
+.custom {
+  height: calc(5px + 1vw);
+  width: calc(5px + 1vw);
+}
+
+#note {
+  margin: 0px 5px;
+  width: 15vw;
+  min-width: 100px;
+  height: calc(8px + 1vw);
+  font-size: calc(8px + 0.5vw);
+}
+
+.order-btn {
+  margin: auto;
+}
+
+.order-btn button {
+  width: 15vw;
+  min-width: 100px;
+  aspect-ratio: 3/1;
+
+  font-weight: bold;
+  font-size: calc(8px + 1vw);
+
+  background: transparent;
+  border: 2px solid var(--card-color);
+
+  cursor: pointer;
+}
+
+.order-total {
+  pointer-events: none;
+}
+
+/* check window */
+.check-panel {
+  padding: 13px;
+  min-width: 560px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.check-panel::after {
+  font-size: calc(14px + 2.6vw);
+  top: -10%;
+  right: -10%;
+}
+
+.table-wrapper {
+  max-height: 480px;
+  overflow-y: auto;
+}
+
+table {
+  min-width: 510px;
+}
+
+thead {
+  font-size: calc(18px + 0.5vw);
+  letter-spacing: 5px;
+}
+
+th,td {
+  text-align: center;
+  padding: 10px 15px;
+  max-width: calc(225px + 0.5vw);
+}
+
+.up-tr {
+  border-top: 2px solid var(--main-content-color);
+  font-size: calc(13px + 0.5vw);
+  letter-spacing: 5px;
+}
+
+.up-tr td {
+  padding-bottom: 0px;
+}
+
+.lowe-tr {
+  font-size: calc(8px + 0.3vw);
+  overflow-wrap: break-word;
+}
+
+.lowe-tr td {
+  padding-top: 0px;
+}
+
+td button {
+  background: transparent;
+  font-weight: bold;
+  font-size: calc(13px + 0.5vw);
+  border: none;
+  cursor: pointer;
+}
+
+.remove-btn {
+  cursor: pointer;
+}
+
+.bill {
+  margin: 15px 0 2px 0;
+
+  background: transparent;
+  border-radius: 5px;
+  border: 2px solid var(--main-content-color);
+
+  width: 75%;
+  aspect-ratio: 6/1;
+
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.bill span {
+  pointer-events: none;
+}

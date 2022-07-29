@@ -15,7 +15,7 @@ const finalOrder = document.querySelector('.final-order')
 const orderList = document.querySelector('.order-list')
 const billPrice = document.querySelector('.bill-price')
 
-let stockoutList = JSON.parse(localStorage.getItem('stockout'))
+let stockoutList = JSON.parse(localStorage.getItem('stockout')) || []
 let orderLimit = 100
 let orderInfo = []
 let customPrice = 0
@@ -73,6 +73,9 @@ function renderOrderList() {
       </tr>`
   })
 }
+
+document.getElementById('restock').onclick = function(){localStorage.removeItem('stockout')}
+
 
 //更換點餐視窗內容 chage order window content
 menu.addEventListener('click', e => {

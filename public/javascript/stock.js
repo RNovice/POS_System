@@ -12,7 +12,7 @@ stockoutList.forEach(each => {
 
 
 stockPage.addEventListener('click', e => {
-  target = e.target
+  const target = e.target
 
   if (target.classList.contains('stock-checkbox')){
 
@@ -38,7 +38,7 @@ stockPage.addEventListener('click', e => {
 
 
 stockSubmitWindow.addEventListener('click', e => {
-  target = e.target
+  const target = e.target
   
   //退出視窗再確認 exit reconfirm window
   if (target.classList.contains('stock-submit-window')){
