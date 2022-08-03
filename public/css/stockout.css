@@ -1,16 +1,7 @@
 /* stockout */
-.go-back {
-  position: fixed;
-  left: 15px;
-  top: 20px;
-  letter-spacing: 5px;
-  font-size: 15px;
-  font-weight: 900;
-}
-
 .stock-grid {
-  margin: 100px;
-  width: 100%;
+  margin: 50px auto;
+  width: 85%;
   height: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));

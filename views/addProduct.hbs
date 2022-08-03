@@ -1,0 +1,71 @@
+<a class="go-back" href="/edit">&lt;back</a>
+
+<form class="edit-form" action="/addnew" method="post">
+  <div class="container">
+
+    <div class="flex-container edit-flex" style="justify-content: space-between; margin-bottom: 2px;">
+      <div class="edit-left">
+        <label for="edit-name">名稱</label>
+        <input type="text" name="name" id="edit-name" placeholder="name" required>
+        <label for="edit-category">分類</label>
+        <select name="category" id="edit-category">
+          {{#each data.category}}
+            <option value="{{this}}">{{this}}</option>
+          {{/each}}
+          
+        </select>
+        <label for="edit-price">價格</label>
+        <input type="number" name="price" min="0" id="edit-price" placeholder="price" required>
+        <label for="edit-cost">成本</label>
+        <input type="number" name="cost" min="0" id="edit-cost" placeholder="cost" required>
+      </div>
+      
+      <div class="edit-right">
+        <label>食材</label>
+        <textarea class="scrollbar" name="material" id="edit-material" placeholder="material" onkeypress="return false;" required></textarea>
+        <div class="material-grid scrollbar">
+          {{#each data.material}}
+          <div class="material-item">
+            <input class="material-checkbox" type="checkbox" id="{{this}}" value="{{this}}">
+            <label class="" for="{{this}}">{{this}}</label>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+    
+    <div style="min-width: 355px;">
+      <label>屬性icon</label>
+      <input id="edit-property-list" type="hidden" name="property">
+      <div class="edit-property">
+        {{#each data.property }}
+        <div class="edit-property-item">
+          <input class="property-checkbox" id="{{this}}" type="checkbox" value="{{this}}">
+          <label for="{{this}}">
+            <img class="edit-property-icon" src="{{this}}" alt="" style="height: 20px;">
+          </label>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+    
+    <div class="edit-custom">
+      <div class="flex-container" style="align-items:center; width:355px">
+        <label for="">客製項目</label><i class="add-custom">&#43;</i>
+      </div>
+      <div class="edit-cst-list">
+      </div>
+    </div>
+    
+    
+    
+    <button class="edit-done" type="submit">
+      <p>新增</p>
+      <p>產品</p>
+    </button>
+  </div>
+</form>
+
+
+{{!-- js --}}
+<script src="/javascript/editProduct.js"></script>

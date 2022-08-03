@@ -3,7 +3,8 @@
 @import "homePopup.css";
 @import "stockout.css";
 @import "colorCustom.css";
-
+@import "edit.css";
+@import "productEdit.css";
 
 /*reset */
 html {
@@ -62,7 +63,6 @@ html {
 }
 
 body {
-  display: flex;
   height: 100%;
 }
 
@@ -80,6 +80,15 @@ body {
 button {
   border: var(--main-content-color);
   color: var(--main-content-color);
+}
+
+.go-back {
+  position: fixed;
+  left: 15px;
+  top: 20px;
+  letter-spacing: 5px;
+  font-size: 15px;
+  font-weight: 900;
 }
 
 .window-background {

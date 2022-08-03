@@ -1,0 +1,52 @@
+<div class="tool-base"></div>
+<div class="edit-tools">
+  <div class="blank-tool">
+    <a class="go-back" href="/">&lt;back</a>
+  </div>
+  <div class="edit-mode">編輯模式</div>
+  <div class="flex-container button-area" style="align-items: center;">
+    <input type="checkbox" id="delete-btn">
+    <label class="delete-product" for="delete-btn">
+      <p class="de-btn-state">刪除</p>
+      <p>產品</p>
+    </label>
+      <button class="add-something">新增其他資料</button>
+    <a class="add-new" href="/add">
+      <p>新增</p>
+      <p>產品</p>
+    </a>
+  </div>
+  
+</div>
+
+<div class="flex-container">
+  <div class="menu">
+    <div class="category">
+      {{#each category}}
+        <h2 id="{{this}}">{{this}}</h2>
+        <div class="wrapper">
+          {{#each ../product}}
+            {{#filter ../this this}}
+            <div class="wrap-item" id="{{this._id}}">
+              <a class="card" href="/edit/{{this._id}}" data-id="{{this._id}}" data-name="{{this.name}}">
+                <div class="product-name">{{ this.name }}</div>
+                <div class="property">
+                  {{#each this.property}}<img class="property-img" src="{{ this }}" alt="">{{/each}}
+                </div>
+              </a>
+            </div>
+            {{/filter}}
+          {{/each}}
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</div>
+
+
+<div class="window-background edit-window">
+  <div class="edit-panel panel"></div>
+</div>
+
+{{!-- js --}}
+<script src="/javascript/editPage.js"></script>

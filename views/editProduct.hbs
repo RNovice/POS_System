@@ -1,0 +1,79 @@
+<a class="go-back" href="/edit">&lt;back</a>
+
+<form class="edit-form" action="/edit" method="post">
+  <div class="container">
+
+    <div class="flex-container edit-flex" style="justify-content: space-between; margin-bottom: 2px;">
+      <div class="edit-left">
+        <label for="edit-name">名稱</label>
+        <input type="hidden" name="id" value="{{product._id}}">
+        <input type="text" name="name" id="edit-name" value="{{product.name}}" required>
+        <label for="edit-category">分類</label>
+        <select name="category" id="edit-category">
+          <option value="{{product.category}}" selected="selected" hidden="hidden">{{product.category}}</option>
+          {{#each data.category}}
+            <option value="{{this}}">{{this}}</option>
+          {{/each}}
+          
+        </select>
+        <label for="edit-price">價格</label>
+        <input type="number" name="price" min="0" id="edit-price" value="{{product.price}}" required>
+        <label for="edit-cost">成本</label>
+        <input type="number" name="cost" min="0" id="edit-cost" value="{{product.cost}}" required>
+      </div>
+      
+      <div class="edit-right">
+        <label for="edit-material">食材</label>
+        <textarea class="scrollbar" name="material" id="edit-material" cols="30" rows="10" onkeypress="return false;" required>{{product.material}}</textarea>
+        <div class="material-grid scrollbar">
+          {{#each material}}
+          <div class="material-item">
+            <input class="material-checkbox" type="checkbox" id="{{this.name}}" value="{{this.name}}" {{this.check}}>
+            <label class="" for="{{this.name}}">{{this.name}}</label>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+    
+    <div style="min-width: 355px;">
+      <label>屬性icon</label>
+      <input id="edit-property-list" type="hidden" name="property">
+      <div class="edit-property">
+        {{#each property }}
+        <div class="edit-property-item">
+          <input class="property-checkbox" id="{{this.src}}" type="checkbox" {{this.check}} value="{{this.src}}">
+          <label for="{{this.src}}">
+            <img class="edit-property-icon" src="{{this.src}}" alt="" style="height: 20px;">
+          </label>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+    
+    <div style="visibility:hidden; position:absolute;">
+      {{#each product.custom}}
+        {{{this}}}
+      {{/each}}
+    </div>
+    
+    <div class="edit-custom">
+      <div class="flex-container" style="align-items:center; width:355px">
+        <label for="">客製項目</label><i class="add-custom">&#43;</i>
+      </div>
+      <div class="edit-cst-list">
+      </div>
+    </div>
+    
+    
+    
+    <button class="edit-done" type="submit">
+      <p>編輯</p>
+      <p>完成</p>
+    </button>
+  </div>
+</form>
+
+
+{{!-- js --}}
+<script src="/javascript/editProduct.js"></script>

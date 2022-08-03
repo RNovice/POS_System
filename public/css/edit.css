@@ -1,0 +1,186 @@
+/* edit page */
+.tool-base {
+  width: 100%;
+  height: 80px;
+}
+
+.edit-tools {
+  padding: 0 10px;
+  width: 100%;
+  height: 80px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+
+  background: var(--main-color);
+  z-index: 2;
+}
+
+.blank-tool {
+  width: 80px;
+}
+
+.edit-mode {
+  padding: 0 10px;
+
+  font-size: 30px;
+  font-weight: bolder;
+
+  border: 4px solid var(--card-color);
+  border-radius: 5px;
+}
+
+.delete-product {
+  background: var(--main-color);
+  color: var(--main-content-color);
+  border: 2px solid var(--main-content-color);
+  border-radius: 10px;
+
+  padding: 5px 0;
+  height: 55px;
+  width: 55px;
+  font-size: 15px;
+  text-align: center;
+
+  cursor: pointer;
+}
+
+.delete-product p {
+  font-weight: bolder;
+  pointer-events: none;
+  user-select: none;
+}
+
+#delete-btn {
+  visibility: hidden;
+  position: absolute;
+}
+
+#delete-btn:checked ~ .delete-product{
+  border-color: var(--card-color);
+  color: var(--card-color);
+}
+
+.delete-card::before {
+  content: '';
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+
+  height: 75px;
+  width: 150px;
+  border-radius: 10px;
+
+  z-index: 1;
+  cursor: default;
+}
+
+.delete-card::after {
+  content: '移除';
+  color: gray;
+  text-shadow:
+  -1px  0px #fff,
+   0px  1px #fff,
+   1px  0px #fff,
+   0px -1px #fff;
+  font-weight: bolder;
+  font-size: 20px;
+  
+  position: absolute;
+  height: 75px;
+  width: 150px;
+  transform: rotate(-15deg);
+
+  top:-15px;
+  left: 10px;
+
+  z-index: 1;
+  cursor: default;
+}
+
+.add-something {
+  background: var(--main-color);
+  color: var(--card-color);
+  border: 2px solid var(--card-color);
+  border-radius: 5px;
+
+  margin: 5px;
+  padding: 0;
+  width: 105px;
+  height: 55px;
+  font-size: 15px;
+  font-weight: 600;
+
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.add-new {
+  background: var(--card-color);
+  color: var(--card-content-color);
+  border: 2px solid var(--card-content-color);
+  border-radius: 10px;
+
+  padding: 5px 0;
+  width: 55px;
+  height: 55px;
+  font-size: 15px;
+  text-align: center;
+}
+
+/* edit popup window */
+.edit-panel {
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
+  min-width: 350px;
+  min-height: 100px;
+}
+
+.edit-panel::after {
+  font-size: calc(14px + 3vw);
+  top: -16%;
+  right: -20%;
+}
+
+.general-button {
+  background: var(--main-color);
+  border: 3px solid var(--main-content-color);
+  border-radius: 10px;
+  
+  margin-top: 16px;
+  width: 150px;
+  height: 50px;
+
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.something-selector {
+  background: var(--main-color);
+  border: 1px solid var(--main-content-color);
+  border-radius: 5px;
+  
+  width: 150px;
+  height: 35px;
+
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.something-input {
+  border: 1px solid var(--main-content-color);
+  
+  margin-top: 20px;
+  padding: 5px;
+  font-size: 35px;
+}
+
+.something-input::placeholder {
+  color: var(--main-content-color);
+  padding: 5px;
+}
