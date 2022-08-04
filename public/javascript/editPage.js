@@ -21,7 +21,7 @@ toolbar.addEventListener('click', e => {
 
   if (target.classList.contains('add-something')){
     panel.innerHTML = `
-    <form action="/addsomedata" method="post" enctype="multipart/form-data">
+    <form action="/edit/adddata" method="post" enctype="multipart/form-data">
       <select class="something-selector" name="option">
         <option value="category">新增產品分類</option>
         <option value="material">新增食材物料</option>
@@ -59,7 +59,7 @@ editWindow.addEventListener('click', e => {
   }
 
   if (target.classList.contains('delete-submit')){
-    fetch('/delete', {
+    fetch('/edit/delete', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ id: target.dataset.id })
@@ -85,7 +85,7 @@ panel.addEventListener('input', e => {
   if (target.classList.contains('something-selector')){
     const sendHTML = document.querySelector('.here-something')
     switch (target.value){
-      case 'cetagory':
+      case 'category':
       sendHTML.innerHTML = '<input class="something-input" name="category" type="text" placeholder="輸入分類名稱" required>'
       break;
       case 'material':
