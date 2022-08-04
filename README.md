@@ -114,3 +114,7 @@ mongodb connected
 
 客製化主題顏色功能
 ![專案畫面](./public/img/readmeImg/color.png)
+
+
+https://user-images.githubusercontent.com/89009561/182818582-50c53c45-79d8-4a07-9f76-98781ad3755b.mp4
+
