@@ -100,6 +100,10 @@ Listening on http://localhost:3000
 mongodb connected
 ```
 
+６.[瀏覽佈署於heroku的專案](http://posssystem.herokuapp.com/welcome)
+```
+http://posssystem.herokuapp.com/welcome
+```
 &nbsp;
 ## **專案畫面**
 

@@ -42,7 +42,7 @@
 }
 
 .stock-checkbox:checked + .stock-label::before{
-  content: '\26CC';
+  content: '\2573';
   color: red;
 }
 
