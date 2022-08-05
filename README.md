@@ -58,7 +58,7 @@ git clone https://github.com/RNovice/POS_System
 npm install
 ```
 
-３.若使用自己的MongoDB資料庫
+３.設定MongoDB資料庫
 > 設定環境變數 process.env.MONGODB_URI 為資料庫URI
 
 > 或於models資料夾 mongoose.js 第3行 修改連線資料庫
