@@ -61,7 +61,7 @@ npm install
 ３.設定MongoDB資料庫
 > 設定環境變數 process.env.MONGODB_URI 為資料庫URI
 
-> 或於models資料夾 mongoose.js 第3行 修改連線資料庫
+> 或於config資料夾 mongoose.js 第3行 修改連線資料庫
 ```js
 mongoose.connect('資料庫URI', { useNewUrlParser: true, useUnifiedTopology: true })
 ```
